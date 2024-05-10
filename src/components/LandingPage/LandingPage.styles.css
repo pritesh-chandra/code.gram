@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+
+body {
+    background-color: black;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    margin-top: 40px;
+}
+
+.conatiner {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    /* max-height: 438px; */
+    font-family: "DM Mono", monospace;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+.title-container > * {
+    max-width: 100%;
+    flex-shrink: 1;
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    width: 589px;
+    margin-left: 63px;
+    font-family: "DM Mono", monospace;
+}
+
+.title-container h1 {
+    font-size: 40px;
+    font-weight: 500;
+    color: white;
+}
+
+.title-container p {
+    font-size: 20px;
+    font-weight: 300;
+    color: white;
+    text-align: justify;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    width: 241px;
+    height: 32px;
+}
+
+.button-container button {
+    border: none;
+    border-radius: 6px;
+    font-family: "DM Mono", monospace;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.explore-more {
+    background-color: #f49425;
+    color: black;
+    width: 191px;
+    height: 32px;
+}
+
+.arrow {
+    background-color: #1b1b1b;
+    color: #f49425;
+    width: 32px;
+    height: 32px;
+}
+
+.login-main-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border: 1px solid white;
+}
+
+.login-main-div h1 {
+    color: white;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.login-main-div input {
+    width: 274px;
+    height: 40px;
+    padding-left: 20px;
+    background-color: #1b1b1b;
+    border: 1px solid #ffffff;
+    color: #575757;
+    font-family: "DM Mono", monospace;
+    font-size: 12px;
+    font-weight: 300;
+    margin: 8px 0;
+}
+
+.login-main-div button {
+    color: black;
+    background-color: #f49425;
+    width: 300px;
+    height: 32px;
+    border: none;
+    margin-top: 10px;
+    font-family: "DM Mono", monospace;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 500;
+    border-radius: 6px;
+}
+
+.login-main-div a {
+    color: white;
+    font-family: "DM Mono", monospace;
+    font-size: 12px;
+    font-weight: 300;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+.login-line {
+    width: 300px;
+    height: 0;
+    margin-top: 30px;
+    border: 0.6px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-line p {
+    color: white;
+    font-family: "DM Mono", monospace;
+    font-size: 15px;
+    font-weight: 500;
+    margin: 0 10px;
+    background-color: black;
+    height: 21px;
+    width: 32px;
+    text-align: center;
+}
+
+.login-with-github {
+    margin-top: 30px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    line-height: 20px;
+}
+
+.login-with-github img {
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    padding: 0;
+    margin-right: 10px;
+}
+
+.forgotten-your-password {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.login-next-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+    border: 1px solid white;
+}
+
+.login-next-div h3 {
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.login-next-div a {
+    text-decoration: none;
+    color: #82b1ff;
+}
+
+/* 
+.login-app-download-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.login-app-download-div h3 {
+    color: white;
+    font-size: 15px;
+}
+
+.app-download-buttons {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 0;
+}
+
+.app-download-btn {
+    width: 138px;
+    height: 38px;
+    border-radius: 7px;
+    background-color: #ffffff;
+    margin: 10px;
+    margin-top: 0;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.app-download-btn-img {
+    width: 30px;
+    height: 30px;
+}
+
+.app-download-btn-img img {
+    width: 30px;
+    height: 30px;
+
+}
+
+.app-download-btn-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+} */
+
+/* .app-download-btn-text p {
+    font-family: "DM Mono", monospace;
+    font-size: 8px;
+    font-weight: 500;
+    color: black;
+    margin-top: 30px;
+} */
+
+/* .app-download-btn-text h5 {
+    font-family: "DM Mono", monospace;
+    font-size: 13.5px;
+    font-weight: 500;
+    color: black;
+    width: 100px;
+    height: 18px;
+    margin-top: -4px;
+} */
+
+@media screen and (max-width: 860px) {
+    .main-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 80vh;
+    }
+
+    .conatiner {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .title-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 400px;
+        font-family: "DM Mono", monospace;
+        padding: 20px;
+        box-sizing: border-box;
+        overflow: auto;
+    }
+
+    .title-container > * {
+        max-width: 100%;
+        flex-shrink: 1;
+    }
+
+    .title-container h1 {
+        width: 550px;
+        font-size: 28px;
+        font-weight: 500;
+        color: white;
+        text-align: center;
+    }
+
+    .title-container p {
+        font-size: 20px;
+        font-weight: 300;
+        color: white;
+        text-align: center;
+    }
+
+    .button-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 20px;
+        width: 241px;
+        height: 32px;
+        margin: 20px 0;
+    }
+
+    .explore-more {
+        background-color: #f49425;
+        color: black;
+        width: 191px;
+        height: 32px;
+    
+    }
+
+    .login-container {
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        margin-left: 0;
+        font-family: "DM Mono", monospace;
+    }
+
+}
