@@ -1,7 +1,7 @@
 {
   "name": "code.gram",
   "version": "0.1.0",
-  "homepage": "https://pritesh-chandra.github.io/code.gram",
+  "homepage": "https://pritesh-chandra.github.io/code.gram/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
