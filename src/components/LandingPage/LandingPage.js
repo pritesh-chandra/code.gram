@@ -4,6 +4,7 @@ import GitHubIcn from "../../assets/github-icn.png";
 // import AppleIcn from "../../assets/apple-icn.png";
 // import GoogleIcn from "../../assets/play-store-icn.svg";
 import Footer from "../Footer/Footer";
+import { Link } from "react-router-dom";
 
 const LandingPage = () => {
 
@@ -27,6 +28,24 @@ const LandingPage = () => {
         });
     }
 
+    const handleLogin = (e) => {
+      e.preventDefault();
+    
+      // Validate username and password
+      if (!requestData.userName) {
+        alert("Please enter your username or email");
+        return;
+      }
+    
+      if (!requestData.password) {
+        alert("Please enter your password");
+        return;
+      }
+    
+      // Here you can handle the login logic (e.g., send the requestData to an API)
+      console.log(requestData);
+    };
+
   return (
     <div className="main-container">
       <div className="conatiner">
@@ -47,10 +66,10 @@ const LandingPage = () => {
         </div>
         <div className="login-container">
           <div className="login-main-div">
-            <h1>coder.gram</h1>
+            <nav><Link to={"/"}><h1>coder.gram</h1></Link></nav>
             <input type="text" placeholder="username or emailid" onChange={handleUserName} />
             <input type="password" placeholder="password" onChange={handlePassword} />
-            <button>Login</button>
+            <button onClick={handleLogin}>Login</button>
             <div className="login-line">
               <p>OR</p>
             </div>
@@ -66,32 +85,13 @@ const LandingPage = () => {
           </div>
           <div className="login-next-div">
             <h3>
-              Don't have an account? <a href="#">Sign Up</a>{" "}
+              Don't have an account? <nav>
+                <Link to="/signup">
+                  <a>Sign Up</a>
+                </Link>
+                </nav>{" "}
             </h3>
           </div>
-          {/* <div className="login-app-download-div">
-            <h3>Get the app.</h3>
-            <div className="app-download-buttons">
-              <div className="app-download-btn">
-                <div className="app-download-btn-img">
-                  <img className="" src={AppleIcn} alt="apple-logo" />
-                </div>
-                <div className="app-download-btn-text">
-                  <p>Download on the</p>
-                  <h5>App Store</h5>
-                </div>
-              </div>
-              <div className="app-download-btn">
-                <div className="app-download-btn-img">
-                  <img src={GoogleIcn} alt="google-play-store-logo" />
-                </div>
-                <div className="app-download-btn-text">
-                  <p>Get it on</p>
-                  <h5>Google Play</h5>
-                </div>
-              </div>
-            </div>
-          </div> */}
         </div>
       </div>
       <Footer />

@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/code.gram/static/css/main.6f990103.css",
+    "main.js": "/code.gram/static/js/main.835812f8.js",
+    "index.html": "/code.gram/index.html",
+    "main.6f990103.css.map": "/code.gram/static/css/main.6f990103.css.map",
+    "main.835812f8.js.map": "/code.gram/static/js/main.835812f8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6f990103.css",
+    "static/js/main.835812f8.js"
+  ]
+}

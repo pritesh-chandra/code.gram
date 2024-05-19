@@ -1,0 +1,85 @@
+.signup-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.signup-main h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.signup-main form {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 25px;
+}
+
+.signup-main form label {
+    margin: 0.5rem;
+    color: white;
+    font-family: 'DN Mono', monospace;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.signup-main form input {
+    font-family: 'DN Mono', monospace;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    width: 100%;
+    border: none;
+    background: #000;
+    color: white;
+    border: 1px solid rgb(43, 43, 43);
+}
+
+.signup-main form input::placeholder {
+    color: rgb(100, 100, 100);
+    font-family: 'DN Mono', monospace;
+}
+
+.signup-main form input:focus {
+    outline: none;
+    border: 1px solid rgb(43, 43, 43);
+}
+
+.signup-main form button {
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    width: 200px;
+    border: 1px solid rgb(43, 43, 43);
+    background: #000;
+    color: white;
+    cursor: pointer;
+    font-family: "DN Mono", monospace;
+}
+
+.signup-main form button:hover {
+    background: rgb(43, 43, 43);
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    width: 100%;
+    background: #000;
+    color: white;
+    cursor: pointer;
+    font-family: "DN Mono", monospace;
+}
+
+.error {
+    color: crimson;
+    font-family: 'DN Mono', monospace;
+    margin: 0.5rem 0;
+}
